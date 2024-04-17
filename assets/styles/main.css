@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: transparent;
+    list-style: none;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+ .box {
+    width: 100px;
+    height: 100px;
+    animation-name: boxer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.box img {
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes boxer{
+    from{
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    to{
+        transform: translateX(100px) rotate(360deg);
+    }
+} 
